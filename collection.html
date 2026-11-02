@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История посещений — платформа записи к врачам «МедЗапись»</title>
+</head>
+<body>
+  <header>
+    <p><strong>МедЗапись</strong> — платформа записи к врачам</p>
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог врачей</a></li>
+        <li><a href="detail.html">Детальная страница врача</a></li>
+        <li><a href="collection.html">История посещений</a></li>
+        <li><a href="checkout.html">Запись на приём</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>История посещений</h1>
+
+    <section>
+      <h2>Записи о приёмах</h2>
+
+      <table>
+        <caption>История посещений пациента</caption>
+        <thead>
+          <tr>
+            <th scope="col">Дата</th>
+            <th scope="col">Врач</th>
+            <th scope="col">Специализация</th>
+            <th scope="col">Диагноз</th>
+            <th scope="col">Назначение</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">10.10.2026</td>
+            <td>Талипов А. А.</td>
+            <td>Терапевт</td>
+            <td>ОРВИ</td>
+            <td>Постельный режим, обильное питьё, контрольный осмотр</td>
+          </tr>
+          <tr>
+            <td>Петрова М. С.</td>
+            <td>Кардиолог</td>
+            <td>Артериальная гипертензия 1 степени</td>
+            <td>Контроль артериального давления, диета</td>
+          </tr>
+
+          <tr>
+            <td>05.09.2026</td>
+            <td>Сидоров А. В.</td>
+            <td>Невролог</td>
+            <td>Остеохондроз шейного отдела</td>
+            <td>Лечебная физкультура, массаж, повторная консультация</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Всего посещений</th>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Телефон: <a href="tel:+79279662755">+7 (927) 966-27-55</a><br>
+      Электронная почта: <a href="mailto:adr254@medzapis.example">adr254@medzapis.example</a>
+    </address>
+    <p><small>© 2026 «МедЗапись». Учебный прототип.</small></p>
+  </footer>
+</body>
+</html>
