@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подтверждение приёма — платформа записи к врачам «МедЗапись»</title>
+</head>
+<body>
+  <header>
+    <p><strong>МедЗапись</strong> — платформа записи к врачам</p>
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог врачей</a></li>
+        <li><a href="detail.html">Детальная страница врача</a></li>
+        <li><a href="collection.html">История посещений</a></li>
+        <li><a href="checkout.html">Запись на приём</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Подтверждение приёма</h1>
+
+    <section>
+      <h2>Форма записи к врачу</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Данные пациента</legend>
+
+          <p>
+            <label for="fio">ФИО пациента</label><br>
+            <input type="text"
+                   id="fio"
+                   name="fio"
+                   required
+                   minlength="5"
+                   maxlength="150"
+                   autocomplete="name">
+          </p>
+
+          <p>
+            <label for="oms">Номер полиса ОМС</label><br>
+            <input type="text"
+                   id="oms"
+                   name="oms"
+                   required
+                   pattern="[0-9]{16}"
+                   minlength="16"
+                   maxlength="16"
+                   inputmode="numeric"
+                   title="Введите 16 цифр без пробелов"
+                   placeholder="0000000000000000">
+          </p>
+
+          <p>
+            <label for="email">Электронная почта</label><br>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required
+                   maxlength="100"
+                   autocomplete="email"
+                   placeholder="patient@example.com">
+          </p>
+
+          <p>
+            <label for="phone">Контактный телефон</label><br>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   required
+                   pattern="\+7[0-9]{10}"
+                   title="Формат: +7 и 10 цифр без пробелов"
+                   placeholder="+79991234567"
+                   autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Параметры приёма</legend>
+
+          <p>
+            <label for="appointment-date">Дата приёма</label><br>
+            <input type="date"
+                   id="appointment-date"
+                   name="appointment_date"
+                   required>
+          </p>
+
+          <p>
+            <label for="appointment-time">Время приёма</label><br>
+            <input type="time"
+                   id="appointment-time"
+                   name="appointment_time"
+                   required>
+          </p>
+
+          <p>
+            <label for="branch">Филиал клиники</label><br>
+            <select id="branch" name="branch" required>
+              <option value="">— выберите филиал —</option>
+              <option value="central">Центральный филиал, ул. Медицинская, 10</option>
+              <option value="north">Северный филиал, пр. Здоровья, 25</option>
+              <option value="south">Южный филиал, ул. Лечебная, 3</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="comment">Комментарий для врача</label><br>
+            <textarea id="comment"
+                      name="comment"
+                      rows="4"
+                      cols="60"
+                      maxlength="500"
+                      placeholder="Например: нужен повторный приём после обследования"></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Согласие</legend>
+
+          <p>
+            <input type="checkbox"
+                   id="consent"
+                   name="consent"
+                   required>
+            <label for="consent">
+              Я даю согласие на обработку персональных данных
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit" name="confirm" value="yes">
+            Подтвердить запись
+          </button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Телефон: <a href="tel:+79279662755">+7 (927) 966-27-55</a><br>
+      Электронная почта: <a href="mailto:adr254@medzapis.example">adr254@medzapis.example</a>
+    </address>
+    <p><small>© 2026 «МедЗапись». Учебный прототип.</small></p>
+  </footer>
+</body>
+</html>
